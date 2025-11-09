@@ -1,3 +1,6 @@
+import imgSrc1 from "../../assets/1.png"
+import imgSrc2 from "../../assets/2.png"
+import imgSrc3 from "../../assets/3.png"
 import React from "react";
 
 const Card = ({ title, img, rotate }) => (
@@ -21,17 +24,17 @@ export default function Services() {
         <div className="flex gap-4 mt-8">
           <Card
             title="Film Production"
-            img="/assets/3.png"
+            img={imgSrc1}
             rotate="-rotate-3"
           />
           <Card
             title="Branding"
-            img="/assets/1.png"
+            img={imgSrc2}
             rotate="rotate-3"
           />
           <Card
             title="Art Curation"
-            img="/assets/2.png"
+            img={imgSrc3}
             rotate="-rotate-2"
           />
         </div>
