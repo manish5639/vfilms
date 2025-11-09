@@ -1,68 +1,91 @@
 {
-	"info": {
-		"_postman_id": "98a85111-b6d0-4303-b739-50f537345ebf",
-		"name": "vfiles",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "19209607"
-	},
-	"item": [
-		{
-			"name": "https://vernanbackend.ezlab.in/api/contact-us/",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "https://vernanbackend.ezlab.in/api/contact-us",
-					"protocol": "https",
-					"host": [
-						"vernanbackend",
-						"ezlab",
-						"in"
-					],
-					"path": [
-						"api",
-						"contact-us"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "https://vernanbackend.ezlab.in/api/contact-us/",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"name\": \"John doe\",\n  \"email\": \"johndoe@example.com\",\n  \"message\": \"Test Message\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://vernanbackend.ezlab.in/api/contact-us/",
-					"protocol": "https",
-					"host": [
-						"vernanbackend",
-						"ezlab",
-						"in"
-					],
-					"path": [
-						"api",
-						"contact-us",
-						""
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "98a85111-b6d0-4303-b739-50f537345ebf",
+    "name": "vfiles",
+    "description": "Collection for vfiles API testing — includes a sample request for submitting the contact form.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19209607"
+  },
+  "item": [
+    {
+      "name": "Submit Contact Form",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"johndoe@example.com\",\n  \"message\": \"Test message from Postman\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+          "protocol": "https",
+          "host": [
+            "vernanbackend",
+            "ezlab",
+            "in"
+          ],
+          "path": [
+            "api",
+            "contact-us",
+            ""
+          ]
+        },
+        "description": "Sends contact form data (name, email, message) to the backend."
+      },
+      "response": [
+        {
+          "name": "Sample Success Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"johndoe@example.com\",\n  \"message\": \"Test message from Postman\"\n}"
+            },
+            "url": {
+              "raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+              "protocol": "https",
+              "host": [
+                "vernanbackend",
+                "ezlab",
+                "in"
+              ],
+              "path": [
+                "api",
+                "contact-us",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Message sent successfully\"\n}"
+        }
+      ]
+    }
+  ]
 }
