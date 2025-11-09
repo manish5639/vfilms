@@ -1,6 +1,6 @@
-import imgSrc1 from "../../assets/1.png"
-import imgSrc2 from "../../assets/2.png"
-import imgSrc3 from "../../assets/3.png"
+import imgSrc1 from "../assets/1.png"
+import imgSrc2 from "../assets/2.png"
+import imgSrc3 from "../assets/3.png"
 import React from "react";
 
 const Card = ({ title, img, rotate }) => (
