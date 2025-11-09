@@ -1,3 +1,4 @@
+import imgSrc from "../assets/vfilms.png"
 import React from "react";
 
 export default function Hero() {
@@ -10,7 +11,7 @@ export default function Hero() {
             style={{ background: "#fff0" }}
           >
             <img
-              src="/assets/vfilms.png"
+              src={imgSrc}
               alt="mandala"
               className="w-72 h-72 object-contain"
             />
